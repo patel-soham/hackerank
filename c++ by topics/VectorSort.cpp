@@ -22,6 +22,7 @@ int main() {
         cin>>i;
     }*/
     sort(arr.begin(),arr.end()); //ascending sort
+    // sort(arr.begin(),arr.end(),greater<int>()); //descending sort
     
     // WAY 3
     for (auto j=arr.begin(); j<arr.end(); j++){
