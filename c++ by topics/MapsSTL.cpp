@@ -21,19 +21,19 @@ int main() {
         cin>>type; 
         switch(type){
             case 1: // to insert or add marks to exisitng student 
-            cin>>arg1>>arg2;
-            if (mp.find(arg1) != mp.end()) mp[arg1] += arg2; 
-            else mp.insert({arg1,arg2}); // or mp[arg2] = arg1;
-            break;
+                cin>>arg1>>arg2;
+                if (mp.find(arg1) != mp.end()) mp[arg1] += arg2; 
+                else mp.insert({arg1,arg2}); // or mp[arg2] = arg1;
+                break;
             case 2: // to erase student entry
-            cin>>arg1;
-            mp.erase(arg1);
-            break;
+                cin>>arg1;
+                mp.erase(arg1);
+                break;
             case 3: // to print student marks if available
-            cin>>arg1;
-            if (mp.find(arg1) != mp.end()) cout<<mp[arg1]<<endl;
-            else cout<<0<<endl;
-            break;
+                cin>>arg1;
+                if (mp.find(arg1) != mp.end()) cout<<mp[arg1]<<endl;
+                else cout<<0<<endl;
+                break;
         }
     }
     
